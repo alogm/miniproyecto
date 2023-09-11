@@ -1,0 +1,235 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*Maneja la vista de las card en la pagina principal*/
+}
+
+.card-contai {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*Maneja la vista de las card en el Modal*/
+}
+
+.imag {
+  flex: 1;
+  max-width: 395px;
+  /* Ajusta el ancho de cada card */
+  margin: 20px;
+  /* Espaciado entre las card */
+  padding: 5px;
+  /*Maneja el tamaño de las imagenes en card en el Modal*/
+  
+}
+
+img {
+  width: 395px;
+  height: 269px;
+  top: 209px;
+  left: 94px;
+  border-radius: 24px;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background-color: rgb(249, 250, 251);
+  /*Vista del Modal extendido*/
+}
+
+.modal-content {
+  position: absolute;
+  left: 50%;
+  /*Ajusta a la izquierda */
+  transform: translate(-50%, -03%);
+  /*ajusta hacia abajo las cards y el buscador*/
+  display: flex;
+  justify-content: flex-start;
+  /* Aumenta el ancho y el alto para acomodar 3 imágenes en cada fila */
+  width: 1400px;
+  /* Ajusta el ancho  */
+  max-height: 530px;
+  /* Ajusta la altura máxima  */
+  overflow-y: auto;
+  /* Agregado para habilitar el desplazamiento vertical si es necesario */
+ 
+}
+
+.result-item {
+  flex: 0 0 calc(33.33% - 20px);
+  /* Acomodar en columnas de 3, con margen */
+  max-width: 395px;
+  /* Tamaño máximo */
+  margin: 10px;
+  /* Espaciado entre los resultados */
+  border: 1px solid #ccc;
+  /* Borde opcional para cada resultado */
+  padding: 10px;
+}
+
+.close {
+  top: 10px;
+  left: 100px;
+  cursor: pointer;
+  /*hace que la x se mieva de lugar*/
+}
+
+header {
+  float: right;
+  width: 297px;
+  height: 55px;
+  top: 32px;
+  left: 1047px;
+  border-radius: 16px;
+  border: 1px;
+  /*Mueve elcontenido de la cabezera ajusta y separa el logo y la barra de
+  busqueda */
+}
+
+.wid {
+  float: left;
+  /* Alinea el encabezado a la izquierda */
+  /* Agrega otros estilos según sea necesario para el encabezado */
+  width: 10px;
+  height: 50px;
+  top: 46px;
+  left: 94px;
+  /*ajusta los botones dentro del modal*/
+}
+
+.in {
+  border-start-start-radius: 16px;
+  border-bottom-left-radius: 16px;
+  margin-top: 15px;
+  height: 55px;
+  top: 32px;
+  left: 1047px;
+  border-color: #ccc;
+  background: none;
+  background-color: white;
+  /*ajusta el boton donde aparece la ciudad*/
+}
+
+.me {
+  margin-top: 15px;
+  height: 55px;
+  top: 32px;
+  left: 1047px;
+  border-color: #ccc;
+  background: none;
+  background-color: white;
+  /*ajusta el boton donde aparece Guest*/
+}
+
+.fin {
+  border-end-end-radius: 16px;
+  border-top-right-radius: 16px;
+  margin-top: 15px;
+  height: 55px;
+  top: 32px;
+  left: 1047px;
+  border-color: #ccc;
+  background: none;
+  background-color: white;
+  color: white;
+  /*ajusta el boton donde aparece la lupa*/
+}
+
+.dat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.top-info {
+  display: flex;
+  justify-content: flex-start;
+  /* Alinea type, beds y rating a la izquierda  de la pantalla principal*/
+}
+
+.top-info>p {
+  margin-right: 50px;
+  /* Espacio entre type y beds */
+}
+
+.top-info>span {
+
+  align-self: center;
+  /* Alinea rating a la izquierda */
+}
+
+.dat>p:nth-child(4) {
+  margin-top: 10px;
+  /* Espacio entre rating y title */
+}
+
+.modin {
+  border-start-start-radius: 16px;
+  border-bottom-left-radius: 16px;
+  margin-top: 15px;
+  height: 55px;
+  top: 32px;
+  left: 1047px;
+  border-color: #ccc;
+  background: none;
+  width: 620px;
+}
+
+.modme {
+  margin-top: 15px;
+  height: 55px;
+  top: 32px;
+  left: 1047px;
+  border-color: #ccc;
+  background: none;
+  width: 620px;
+}
+
+.modfin {
+  border-end-end-radius: 16px;
+  border-top-right-radius: 16px;
+  margin-top: px;
+  height: 55px;
+  top: 32px;
+  left: 1047px;
+  border-color: #ccc;
+  background: none;
+
+}
+
+.star {
+  display: block;
+  color: red;
+  margin-top: 10px;
+}
+
+.super {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.5rem;
+  font-size: .75rem;
+  border-width: 1px;
+  border-radius: 0.75rem;
+  border-color: #090909;
+  background: none;
+  height: 40px;
+}
+
+.contmod{
+  
+    display: flex;
+    justify-content: flex-start;
+    
+    /* Alinea type, beds y rating a la izquierda  de la pantalla principal*/
+  
+  
+}
+.left-content{
+  margin-right: 50px;
+}
